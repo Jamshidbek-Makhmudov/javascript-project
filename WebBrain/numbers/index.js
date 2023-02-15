@@ -5,7 +5,11 @@
 console.log(1000_000_000 + 1)
 console.log(2e6) //e buyerda 0 6 esa 0 ni nechtaligi
 console.log(Number((0.2 + 0.1).toFixed(1))) //toFixed buyrugi bizga numberlarni oxiridagi raqamlardan biz xoxlaganimizni olib qolganini yaxlitlab beradi
+<<<<<<< HEAD
 //shu typeof string bopqoladi, Number esa ularni yana number typega ozgartrib beradi
+=======
+//shu typeof string bopqoladi, Number esa ularni yana numbergatyoe ozgartrib beradi
+>>>>>>> 9eb68e4a6a35101bb9da3783bd365cbf3046b962
 let num = "0.2+0.3"
 console.log(parseInt(num)) //0
 console.log(parseFloat(num)) //0.2
@@ -19,7 +23,11 @@ console.log(eval(num)) // evel amal ni bajardi va natijani yana numberga ozgarti
 let num2 = 5
 console.log(num2.toString(2)) //toString string otqazadi lekin uni ichiga parametr kirgizsak binaryga ogiradi
 console.log(parseInt("101", 2)) // parseInt numberga ogiradi lekin, umga 2-parametr kirgissak decimal numer qilib beradi
+<<<<<<< HEAD
 //isNaN true yoki false qaytaradi numermi emas degan savolga javob beradi
+=======
+//isNaN true yoki false qaytaradi numermi emas degan sav   olga javob beradi
+>>>>>>> 9eb68e4a6a35101bb9da3783bd365cbf3046b962
 console.log(isNaN(+"1_000")) //true
 console.log(isNaN(+"1000")) //false    sababi: qavsdagi number chiqadi isNaN esa NaN ya'ni raqammas degani shuning uchun false qaytardi
 console.log(Object.is("jam", "sam")) //=== bn birxil ya'ni 2ta qiymatni typegacha tengligini tekshiradi.
@@ -48,6 +56,7 @@ console.log(Math.max(1, 2, 3, 4, 5, 6, 6, 7, 8, 89)) //eng kattasini topib berdi
 console.log(Math.pow(2, 3)) //sonni darajaga oshiradi
 console.log(Math.sqrt(3)) // ildiz ostida chiqaradi
 console.log(Math.cbrt(4)) //sonni cubini chiqaradi
+<<<<<<< HEAD
 console.log(Math.sign(5)) //The Math.sign() method retuns whether a number is negative, positive or zero.
 
 //If the number is positive, this method returns 1.
@@ -72,3 +81,7 @@ console.log(Math.sign(5)) //The Math.sign() method retuns whether a number is ne
 //error qaytaradi shunda optional chainingdan foydalansak error orniga undefined qilib beradi
 let obj = { name: "jamshid", child: undefined }
 console.log(obj.child?.age)
+=======
+console.log(Math.sign(5));
+
+>>>>>>> 9eb68e4a6a35101bb9da3783bd365cbf3046b962

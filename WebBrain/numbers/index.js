@@ -5,7 +5,7 @@
 console.log(1000_000_000 + 1)
 console.log(2e6) //e buyerda 0 6 esa 0 ni nechtaligi
 console.log(Number((0.2 + 0.1).toFixed(1))) //toFixed buyrugi bizga numberlarni oxiridagi raqamlardan biz xoxlaganimizni olib qolganini yaxlitlab beradi
-//shu typeof string bopqoladi, Number esa ularni yana numbergatyoe ozgartrib beradi
+//shu typeof string bopqoladi, Number esa ularni yana number typega ozgartrib beradi
 let num = "0.2+0.3"
 console.log(parseInt(num)) //0
 console.log(parseFloat(num)) //0.2
@@ -19,7 +19,7 @@ console.log(eval(num)) // evel amal ni bajardi va natijani yana numberga ozgarti
 let num2 = 5
 console.log(num2.toString(2)) //toString string otqazadi lekin uni ichiga parametr kirgizsak binaryga ogiradi
 console.log(parseInt("101", 2)) // parseInt numberga ogiradi lekin, umga 2-parametr kirgissak decimal numer qilib beradi
-//isNaN true yoki false qaytaradi numermi emas degan sav   olga javob beradi
+//isNaN true yoki false qaytaradi numermi emas degan savolga javob beradi
 console.log(isNaN(+"1_000")) //true
 console.log(isNaN(+"1000")) //false    sababi: qavsdagi number chiqadi isNaN esa NaN ya'ni raqammas degani shuning uchun false qaytardi
 console.log(Object.is("jam", "sam")) //=== bn birxil ya'ni 2ta qiymatni typegacha tengligini tekshiradi.

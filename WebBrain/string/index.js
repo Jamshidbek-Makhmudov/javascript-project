@@ -33,7 +33,7 @@ console.log(str2.substring(2, 0)) //ozi togrilab kichigidan kattasiga qilib ozi 
 // eval stringlarni qoshib berishini otdik.
 console.log(str2.trim()) //bosh  joylarni ignor qilib beradi
 console.log(str2.split()) //malumotni arrayga ozgartiradi
-console.log(str2.concat("wabbrain")) //2ta stringni qoshib beradi
+console.log(str2.concat("webbrain")) //2ta stringni qoshib beradi
 console.log(str2.search()) //indexOfga oxshidi, faqat undan tezroq ishlaydi,  regex qabul qiladi
 console.log(new String("jamshid").valueOf) //shunaqa constructorda kelsa faqat valuesini ozini olib beradi
 console.log(str2.replace("jam", "Jam")) //ozgartiradiu   /i qoysak birinchi kelganini, gi hammasini ozgartiradi

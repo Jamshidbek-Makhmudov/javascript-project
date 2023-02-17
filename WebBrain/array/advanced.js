@@ -37,17 +37,23 @@ console.log(
     return value === 3
   })
 )
-//findIndex methodi indexini topib beradi, ishlatilish yoli id orqali topib index.splice qilib osha ma'lumotni ochirib tashlasa boladi
+//findIndex
+// methodi indexini topib beradi, ishlatilish yoli id orqali topib index.splice qilib osha ma'lumotni ochirib tashlasa boladi
 //lekin ochirishda id ni ozini filter qilib ochirib tashlasa boladi
 //ikala ochirishda farqi bor filter har birini ichiga kirib chiqqani uchun vaqt uzoqroq ketadi
 //indexda esa topgan itmeda toxtagani uchun tezroq ishlaydi
 //advanced levelda array uchun for loop ishlatilmaydi ularni ornini map bn forEach qiladi
+//The forEach()
+// method does not return a new array, whereas the map() method returns a new array.
+// The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 //for each bn mapni farqi map returnga qaytadi, forEach returnga qaytmaydi forEach ustida faqat bir marta amal bajarsak boladi
 //agar malumot ekranga chiqishi kerakmi denak map ishlatishimiz shart.
 //agar ekranga chiqmasa ham bolib shungaki qanaqadir amal bajarmoqchi bolsak forEach ishlatib ketsak boladi
 //every() methodi har biri shunaqami degani. boolean qaytardi
 //some() esa bazilari degani. boolean chiqaradi
-//fil() array itemlarini ozgartirmoqchi bolsak ishlatamiz, ichiga 3ta parametr qabul qiladi 1-nimaga ozgartiramiz 2- qayerdan 3-qayergacha ozgartiramiz
+//repace()
+//fil()
+// array itemlarini ozgartirmoqchi bolsak ishlatamiz, ichiga 3ta parametr qabul qiladi 1-nimaga ozgartiramiz 2- qayerdan 3-qayergacha ozgartiramiz
 console.log(num.fill("22", 4, 5)) //replace regex qabul qiladi bu qabul qilmaydi
 //copyWithin() methodi. bu method berilgan arrayni ichidagi itemlarni olib shu ichidagi bshqa itemlarga qalmashtiradi, almashgan itemlar esa ochib ketadi:
 a = [0, 0, 1, 2, 3, 4, 5]
@@ -103,3 +109,19 @@ let object = new Map([
 console.log(object.next())
 console.log(object.next())
 console.log(object.next()) // 3- marta yurgizdirganimizda value undefined chiqadi
+
+//slice returns a piece of the array but it doesn't affect the original array.
+//splice changes the original array by removing, replacing, or adding values and returns the affected values
+//arrayga yangi item qoshish
+//splice yordamida qilinadi
+
+let ar = [1, 2, 4, 5]
+ar.splice(2, 0, 3)
+let ar2 = [1, 2, 4, 4]
+ar.splice(2, 1, 3)
+
+//arraylarda destructure
+//objectda korganimiz kabi arrayni itemlarini ham destructure qilsak boladi:
+let des = ["apple", "peach", "Kiwi"]
+let [one, ...rest] = des
+console.log(des)

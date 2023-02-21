@@ -44,3 +44,27 @@ const getToday = (week, symbol) => {
   }${symbol}${date.getFullYear()}`
 }
 console.log(getToday(week, "/"))
+///
+
+console.log("hello")
+//JSON BU- javscript object notation deyiladi.
+//hajmi jihatdan juda kichik; objectga oxshidi
+//configuration paytida; backend bilan oldi berdi qilinayotganda ishlatilinadi
+//nimaga kerak? JSON faylni hamma language oqiy oladi, java, python,...
+//obj ni JSON faylga ogirish:
+let obj = {
+  name: "Jamshid",
+  l_name: "Makhmudov",
+  year: 1994,
+  data: { company: "Opus" },
+  id: 1,
+  age: 30,
+}
+let json = JSON.stringify(obj, ["name", "year", "data", "company"], 2) // shunday qilib obj ni JSON faylga ogiramiz.
+// backendga ham shunday yuboramiz. ichida 3ta parametr qabul qiladi, 2-chisi replacer deyiladi.
+//replacerni ichida nima yozsak osha malumotlar backendga ketadi. yozilmagani qoladi
+//3-parametr indentation deyiladi; datamizni ichida nested bolgan vaqtida ishlatamiz,
+//nechtadir tap tashlashimiz kerak ishlatish uchun; formationni yaxshilab beradi
+//backenddan kelgan JSON ma'lumotni parse() qilib objectga ogirishimzmumkin
+let myObj = JSON.parse(json)
+console.log(myObj)

@@ -14,7 +14,7 @@
 // }
 // alert(isEmpty(schedule)) // true. topomadim
 
-//2. tartibi bilan chiqsin obshiy si chiqsin.   // buni topolmadim                            yechildi
+//2. tartibi bilan chiqsin obshiy si chiqsin.   //                           yechildi
 //obshiy qiymati chiqsin
 
 // let salaries = {

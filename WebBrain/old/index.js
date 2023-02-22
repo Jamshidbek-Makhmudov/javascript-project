@@ -1,11 +1,13 @@
 console.log("old and global objects")
 //1.IIFE -  Immediatly invoked function expression
-//IIFE nimaga kerak// oldin let bn const chiqishidan local scopeda var bolsa lekin bizga tashqarida boshqa var kerak bolsa doim eskisni yangilab qoygan bu var lar
+//IIFE nimaga kerak// oldin let bn const chiqishidan local scopeda var bolsa lekin bizga tashqarida boshqa var kerak bolsa
+// doim eskisni yangilab qoygan bu var lar
 //IIFE shu handle qilish uchun kerak bolgan
 //ya'ni var ni alohida scopega ovolish uchun kerak
 //IIFE ozini chaqiradigan function boladi formulasi: (function(){})() yoki (()=>{})()  bu oldin ishlatilib xozir ishlatimaydi bunda functionni nomi bolmasligi kerak
 // var a = 10
-// console.log(a)(function () {
+// console.log(a)
+//(function () {
 //   var a = 20
 //   console.log(a)
 // })()

@@ -1,4 +1,5 @@
-//1.new Map
+//1.new MapMap is a collection of elements where each element is stored as a Key, value pair.
+//Map object can hold both objects and primitive values as either key or value.
 //garbage collection bu reach qilaolmaydigan yetib bora olaydigan malumotlarga garbage collection deyiladi
 let obj = {}
 let map = new Map()
@@ -46,6 +47,7 @@ map3.forEach((element) => {
 //////////////////////////////////////////////////////
 console.log("//////////////set//////////////")
 //2. set
+// Set is a collection of unique values. Each value can only occur once in a Set. A Set can hold any value of any data type.
 // map bu key va value collection edi; set esa faat value collection; mapni objectga oxhsatsak, setni arrayga oxshatamiz
 //set ichiga faqat bitta malumot kiritamiz, arrayga oxshab  masalan:
 let setObj = { name: "sam", age: 35 }
@@ -61,3 +63,8 @@ console.log(set)
 //odatdagi objectlarga oxshab garbage collection new Map bn Set ni qiymatlarini ochirib yubormaydi
 // ular unreachable bolishidan tashqari, xotirada ham joy ushlab turaveradi
 // WeakMap va WeakSet lar bn yasalgan malumotlar esa garbage collectionga tushganda, xotiradan ochib ketadi
+//
+//bular ozi nimaga kerak? syatga buzib kirishni oldini olish uchun; biz bizga kelayotgan functionlarni shu new Map ichida save qilib qolamiz
+//oldin shunaqa request keldimi deymiz, agar kelgan bolsa uni ushlab qolgin deymiz;
+//shu orqali API dan kelayotgan toxtovsiz requestlarni ham control qilsa boladi.
+//hamma requestlarni ozini network id si boladi, shu idlarni aniqlab shu networkdan toxtovsiz request kelayotgan bolsa, blocklab qoyiladi qoyiladi

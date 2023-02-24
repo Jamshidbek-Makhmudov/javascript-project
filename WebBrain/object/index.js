@@ -76,7 +76,9 @@ console.log("name" in account) // bu degani: name degan key account degan object
 
 //
 const car = {}
-Object.assign(car, account) // Object.assign bu copy yasaydi, ya'ni paraterdalarni birichi yangi obj ikkinchi source obj qabul qiladi.
+Object.assign(car, account) // Object.assign bu 2ta objectni bir biriga qoshib beradi, 1-qa qoshadi 2-sidan olib
+console.log(car)
+console.log(account)
 // ya'na assignorqali yasalgan yangi obj ham structuredClonega oxshab source dagi obj qiymatiga tegmaydi, ya'ni yangi objectlar qiymati ozgartsa eskisiga
 // ta'sir qilmaydi
 car["born year"] = 1993

@@ -15,6 +15,7 @@ function getData() {
   // }, 0)
 }
 //DDOS attackni oldini olish uchun backenddan yboradigan requestlarni cached qilish kerak:
+//transparent cache qilish kerak
 function getCached(func) {
   let cache = new Map() //MAp function, undefinedlarni olmas edi lekin ularni boshqa varuable tenglasa shu varuablni qabul qiladi
   return function (x) {
@@ -57,3 +58,5 @@ function getCacheds(func) {
 }
 usr.getDatas = getCacheds(usr.getDatas)
 /////////////////////////////////////////////////
+//qoshimcha ma'lumot cached faqat back endga ma'lumot jonatish bn bomidi, biz istalgan harakatimizni masaln juda katta raqamlar bilan loopni natijasini
+//ham cached salib istalgan payt shuni cashed dan chiqarib bersak boladi;

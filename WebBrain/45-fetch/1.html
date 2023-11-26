@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<title>Title</title>
+</head>
+<body style="display: flex; flex-direction: column;">
+	<style>
+	.parent{
+		display: flex;
+	}
+	#data_list, #single{
+		flex: 1;
+	}
+	</style>
+	<h1>fetch</h1>
+	<div class="parent">
+		
+		<div id="data_list">
+			<h2>all data</h2>
+		</div>
+		<div id="single">
+			<h3>selected</h3>
+		</div>
+	</div>
+	<button onclick="getData()">get Data</button>
+	<!-- 2-html fetch with formdata -->
+	<div style="margin-top:40px;">
+		<h1>2-html fetch with formdata</h1>
+		<form class="frEvent" name="frEvent">
+			<input type="email" name="email" placeholder="email">
+			<input type="password" name="password" placeholder="password">
+			<input class="file" type="file" name="file" placeholder="file">
+			<input type="submit" name="submit" value="submit">
+			
+		</form>
+	</div>
+	<!-- search parasm second js file: -->
+
+		<div style="margin-top:40px;">
+			<h2>search parasm second js file:</h2>
+			<h4 id="path"></h4>
+			<input name="address" oninput="onChangeValue(event)" type="text" id="address" placeholder="address value">
+			<input name="city" oninput="onChangeValue(event)" type="text" id="city" placeholder="city value">
+			<input name="zip" oninput="onChangeValue(event)" type="text" id="zip" placeholder="zip value">
+
+		</div>
+
+
+
+
+
+
+<script src="./1.js"></script>
+<script src="./search_parasm.js"></script>
+</body>
+</html>
